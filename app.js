@@ -92,7 +92,6 @@ app.post("/v1/chat/completions", async (req, res) => {
       errmsg: "Unauthorized.",
     });
   }
-  console.log('req', req)
 
   try {
     const data = req.body;
@@ -104,6 +103,7 @@ app.post("/v1/chat/completions", async (req, res) => {
       apiPath = '/workflows/run';
       botType = 'Workflow';
     }
+    
 
     let queryString;
     if (botType === 'Chat') {
@@ -265,6 +265,8 @@ app.post("/v1/chat/completions", async (req, res) => {
         }
 
         buffer = lines[lines.length - 1];
+        const generateId = generateId()
+        console.log(generateId, 'generateId')
       });
     } else {
       let result = "";
