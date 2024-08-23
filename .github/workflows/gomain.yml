@@ -42,6 +42,8 @@ jobs:
           project-token: 6ed7d83077574f00956c58b5209ba184
           # API account token to retrieve your remote Codacy configuration for the project being analyzed
           api-token: WGlNeYoiskBBHFlfpBRh
+          # Optional comma separated list of coverage reports to send to Codacy
+          coverage-reports: bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage
           # Optionally force associating a language with your coverage report
           language: Javascript
       
