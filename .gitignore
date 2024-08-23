@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+out/
+npm-debug.log
+mock-debug.txt
+*.vsix
+
+dist-web/
+.umi
+.umi-production
+
+tsconfig.tsbuildinfo
+dist
+.prompts
