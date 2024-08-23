@@ -39,8 +39,6 @@ jobs:
         # uses: codacy/codacy-coverage-reporter-action@89d6c85cfafaec52c72b6c5e8b2878d33104c699
         uses: codacy/codacy-coverage-reporter-action@v1.3.0
         with:
-          # API project token to retrieve your remote Codacy configuration for the project being analyzed
-          project-token: 6ed7d83077574f00956c58b5209ba184
           # API account token to retrieve your remote Codacy configuration for the project being analyzed
           api-token: 6ed7d83077574f00956c58b5209ba184
           # Optionally force associating a language with your coverage report
